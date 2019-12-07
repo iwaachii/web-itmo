@@ -1,0 +1,43 @@
+div p {
+	font-family: Avenir;
+	font-size: 30px;
+	margin: auto;
+	text-align: center;
+}
+
+.header {
+	background-color: #ffe100;
+	height: 120px;
+	text-align: center;
+}
+
+.content {
+	margin: auto;
+	text-align: center;
+	background-color: #ff8800;
+	width: 50%;
+	height: 500px;
+}
+
+.leftSidebar {
+	background-color: #00d10e;
+	width: 50%;
+	height: 120px;
+	position: absolute;
+	top: 250px;
+	left: 50px;
+}
+
+.rightSidebar {
+	background-color: #00d10e;
+	width: 50%;
+	height: 120px;
+	position: absolute;
+	top: 400px;
+	left: 450px;
+}
+
+.footer {
+	background-color: #ba2200;
+	height: 120px;
+}
