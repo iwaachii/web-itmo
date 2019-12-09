@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+	<script> 
+		$(document).ready(function(){ 
+ 		$("#click").click(function(){ 
+ 		$("#img").animate({ 
+ 			left: '150px', 
+ 			height: '-=25px', 
+ 			width: '-=25px' 
+ 			}); 
+		}); 
+	}); 
+	</script> 
+ 
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+	<script> 
+		$(document).ready(function(){ 
+ 		$("#click1").click(function(){ 
+ 		$("#par").css("color", "blue").slideUp(2000).slideDown(2000); 
+ 		}); 
+		}); 
+	</script> 
+ 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+	<script> 
+		$(document).ready(function(){ 
+ 			$("#def").click(function(){ 
+ 				$("#abc").fadeIn(); 
+		 	}); 
+		}); 
+	</script> 
+ 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+	<script> 
+		$(document).ready(function(){ 
+ 			$("#hi").click(function(){ 
+ 				$("#q").animate({right: '150px'}); 
+ 			}); 
+		}); 
+	</script> 
+ 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+	<script> 
+		$(document).ready(function(){ 
+ 			$("#w").click(function(){ 
+ 				$("#e").css("fontSize", "80px"); 
+ 				}); 
+			}); 
+	</script> 
+ 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+	<script> 
+		$(document).ready(function(){ 
+ 			$("#g").click(function(){ 
+				$("#f").css("color", "green") 
+ 			}); 
+		}); 
+	</script> 
+ 
+ 
+	<meta charset="utf-8"> 
+	<title>task</title> 
+	<link rel="stylesheet" type="text/css" href="style.css"> 
+	</head> 
+	<body bgcolor="#eed1ff"> 
+		<table border="1" cellpadding="35" cellspacing="0"> 
+		<style type="text/css">
+			table {
+				margin: auto;
+			}
+		</style>
+ 
+			<tr> 
+				<td> 
+					<img id="img" src="https://memepedia.ru/wp-content/uploads/2018/07/cover-3-1.jpg" height="150" width="200"> 
+				<td>
+					<button id="click">click me!</button>
+				</td> 
+				</td> 
+			<tr> 
+			<td><p id="par">aloha</p></td> 
+			<td><button id="click1">click me!</button></td> 
+			</tr> 
+ 
+			<tr> 
+				<td><div id="abc" style="width:80px;height:80px;display:none;background-color:#321b40;"></div><br></td> 
+				<td class ="a2"><button id="def">click me!</button></td> 
+			</tr> 
+ 
+			<tr> 
+				<td><div id="q" style="background:#ff0;height:45px;width:45px;position:absolute"></div></td> 
+ 
+				<td><button id="hi">click me!</button></td> 
+			</tr> 
+ 
+			<tr> 
+				<td class id="e">hello world</td> 
+				<td ><button id="w">click me!</button></td> 
+			</tr> 
+ 
+			<tr> 
+				<td class id="f">hi</td> 
+				<td ><button id="g">click me!</button></td> 
+			</tr> 
+ 
+			</table> 
+</body> 
+</html>
