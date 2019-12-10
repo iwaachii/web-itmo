@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>js task</title>
+</head>
+<body>
+	<!-- Работа с URL и строками -->
+	<script type="text/javascript">
+		a = "java script is cool";
+		document.write(a,"<br>");
+		document.write(a.length,"<br>");
+		document.write(a.split(" ").length,"<br>");
+		document.write(location.href,"<br>");
+		document.write(location.protocol,"<br>");
+	</script>
+	
+	<a name="anchor1">VK Feed</a><br>
+	<a name="anchor2">Twitter</a>
+
+	<a href="http://great-world.ru/chto-takoe-ankor-ssylki-kak-sdelat-tekstovyj-ankor/"></a>
+	<a href="https://vk.com/doc243574397_522792486?hash=4a2d74e33c4a662173&dl=9b195dec0751539769"></a>
+	<a href="https://isu.ifmo.ru/pls/apex/f?p=2143:1:116884585108295:"></a>
+	<br>
+	<img src="cat.jpg" id="cat" width="300" height="300">
+	<img src="hedgehog.jpg" id="hedgy" width="228" height="128">
+	<img src="succulent.jpg" id="succulent" width="288" height="180">
+
+	<!--Основные тэги в документах-->
+	<p>Количество анкоров:
+		<script type="text/javascript">
+			document.write(document.anchors.length);
+		</script></p>
+
+	<p>Количество ссылок:
+		<script type="text/javascript">
+			document.write(document.links.length);
+		</script></p>
+
+	<p>innerHTML первого анкора:
+		<script type="text/javascript">
+			document.write(document.anchors[0].innerHTML);
+		</script>
+	</p>
+
+	<p>Количество картинок:
+		<script type="text/javascript">
+			document.write(document.images.length);
+		</script>
+	</p>
+
+	<p>Ширина первой картинки:
+		<script type="text/javascript">
+			document.write(document.images[0].width);
+		</script>
+	</p>
+
+	<script type="text/javascript">
+		document.write(`Ширина самой широкой картинки: ${Math.max.apply(Math, Array.from(document.images).map(function(o) {
+				return o.width;
+				})
+			)}<br>`);
+	</script>
+
+	<!-- Формы -->
+
+	<script>
+            for (i = 0; i < 10; i++) {
+                document.write(`<form id="${i}"><input type="text">`);
+                document.write(`<input type="button" class="button" value="имя формы" onClick="alert(form.id)">`);
+                document.write(`<input type="button" value="принадлежность" onClick="alert(${i});">`);
+                document.write(`<input type="button" value="количество полей" onClick="alert(${document.forms[i].childElementCount + 1})"></form>`);
+            }
+            for (i = 0; i < 10; i += 2) {
+                document.write(`${document.forms[i].id}, `);
+            }
+            document.write(`<form id="form1"><input type="reset" value="click me"><input type="text" placeholder="input smth"></form>`);
+            document.write(`<form id="form2"><input type="password"></form>`);
+        </script>
+
+</body>
+</html>
